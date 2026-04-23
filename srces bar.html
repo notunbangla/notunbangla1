@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+       
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --nb-teal: #006a71; 
+            --nb-red: #ff1f1f;  
+            --border: #e5e5e5;
+            --text-main: #333;
+        }
+
+        /* রিসেট এবং বেসিক স্টাইল */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body { 
+            font-family: 'Noto Serif Bengali', serif !important;
+            background-color: #fff; 
+            color: var(--text-main); 
+            line-height: 1.6; 
+        }
+
+        .container { max-width: 1240px; margin: 0 auto; padding: 0 15px; }
+
+        /* --- Header Top --- */
+        .header-top { display: flex; justify-content: space-between; align-items: center; padding: 15px 0; }
+        .logo img { height: 75px; }
+        
+        .top-news-slider { display: flex; gap: 20px; }
+        .tn-item { display: flex; gap: 10px; width: 260px; border-left: 1px solid var(--border); padding-left: 12px; }
+        .tn-item img { width: 60px; height: 60px; object-fit: cover; border-radius: 4px; }
+        .tn-item p { font-size: 14px; cursor: pointer; font-weight: 500; }
+        .play-icon { color: var(--nb-red); margin-right: 6px; }
+
+        /* --- Navigation --- */
+        nav { 
+            border-top: 1px solid var(--border); 
+            border-bottom: 2px solid var(--nb-teal); 
+            position: sticky; 
+            top: 0; 
+            background: #fff; 
+            z-index: 1000; 
+        }
+        .nav-wrapper { display: flex; justify-content: space-between; align-items: center; }
+        .main-menu { display: flex; list-style: none; }
+        .main-menu li a { display: block; padding: 15px 12px; text-decoration: none; color: #000; font-weight: bold; font-size: 15px; }
+        .main-menu li a:hover { color: var(--nb-teal); }
+
+        .nav-right { display: flex; align-items: center; border-left: 1px solid var(--border); }
+        .nav-btn { padding: 15px 18px; border-right: 1px solid var(--border); cursor: pointer; text-decoration: none; color: #333; font-size: 14px; }
+        .fas.fa-bars { display: none; padding: 15px; font-size: 20px; cursor: pointer; }
+
+        /* --- Banner Ad --- */
+        .banner-container { margin: 20px 0; text-align: center; }
+        .banner-container img { max-width: 100%; height: auto; border-radius: 4px; }
+
+        /* --- Responsive Styles (মোবাইল ও ট্যাবলেটের জন্য) --- */
+        @media (max-width: 992px) {
+            .header-top { flex-direction: column; text-align: center; gap: 15px; }
+            .top-news-slider { width: 100%; overflow-x: auto; padding-bottom: 10px; }
+            .tn-item { min-width: 250px; }
+            
+            .main-menu { overflow-x: auto; white-space: nowrap; width: 100%; }
+            .nav-right { display: none; } /* মোবাইলে নেভ বাটন হাইড */
+            .fas.fa-bars { display: block; }
+        }
+
+        @media (max-width: 600px) {
+            .logo img { height: 50px; }
+            .main-menu li a { padding: 12px 10px; font-size: 14px; }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header-top">
+            <div class="logo">
+                <img src="imges/NotunBangla-Logo-Final.png" alt="নতুন বাংলা">
+            </div>
+            <div class="top-news-slider">
+                <div class="tn-item">
+                    <img src="imges/notunbangla isral2.jpg" alt="news">
+                    <p><i class="fa-regular fa-circle-play play-icon"></i>দেশের অর্থনীতিতে নতুন গতির সঞ্চার...</p>
+                </div>
+                <div class="tn-item">
+                    <img src="imges/notunbangla2.jpg" alt="news">
+                    <p><i class="fa-solid fa-camera play-icon"></i>রঙে-উৎসবে নববর্ষ: চারুকলা থেকে রমনা</p>
+                </div>
+                <div class="tn-item">
+                    <img src="imges/notunbangla10.jpg" alt="news">
+                    <p><i class="fa-solid fa-camera play-icon"></i>জ্বালানি সংকট মোকাবিলা বড় চ্যালেঞ্জ</p>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <nav>
+        <div class="container nav-wrapper">
+            <ul class="main-menu">
+                <li><a href="#">সর্বশেষ</a></li>
+                <li><a href="#">বাংলাদেশ</a></li>
+                <li><a href="#">রাজনীতি</a></li>
+                <li><a href="#">বিশ্ব</a></li>
+                <li><a href="#">খেলা</a></li>
+                <li><a href="#">মতামত</a></li>
+                <li><a href="#">বিনোদন</a></li>
+                <li><a href="#">জীবন যাপন</a></li>
+                <li><a href="#">সাহিত্য</a></li>
+            </ul>
+            
+            <div class="nav-right">
+                <div class="nav-btn"><i class="fa-solid fa-magnifying-glass"></i> খুঁজুন</div>
+                <div class="nav-btn">ই-পেপার</div>
+                <div class="nav-btn" style="color: var(--nb-red); font-weight: bold;">Eng</div>
+                <div class="nav-btn"><i class="fa-solid fa-user"></i> লগইন</div>
+            </div>
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="banner-container">
+            <a href="#">
+                <img src="imges/notunbangla.png" alt="বিজ্ঞাপন">
+            </a>
+        </div>
+    </div>
+
+</body>
+	
+	
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>অনুসন্ধান - নতুন বাংলা</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+        body { font-family: 'Hind Siliguri', sans-serif; }
+        .filter-box { 
+            background-color: #f9fafb; 
+            border: 1px solid #e5e7eb; 
+            border-radius: 4px; 
+            height: 45px;
+            display: flex;
+            align-items: center;
+            padding: 0 12px;
+        }
+        select, input { background: transparent; border: none; outline: none; width: 100%; cursor: pointer; }
+        .pa-bold { font-weight: 700; color: #1a1a1a; }
+    </style>
+</head>
+<body class="bg-white">
+
+    <header class="max-w-[1200px] mx-auto flex justify-between items-center px-6 py-4 border-b border-gray-100">
+        <img src="notun_bangla_logo.png" alt="নতুন বাংলা" class="h-10">
+        <button class="text-3xl text-gray-400">&times;</button>
+    </header>
+
+    <div class="max-w-[1200px] mx-auto px-6 py-8">
+        <h1 class="text-3xl font-bold mb-6 text-black">অনুসন্ধান</h1>
+
+        <div class="grid grid-cols-1 lg:grid-cols-[1fr_300px] gap-8">
+            
+            <div class="space-y-6">
+                
+                <div class="flex border border-gray-300 rounded overflow-hidden">
+                    <input type="text" placeholder="যা খুঁজতে চান" class="flex-1 px-4 py-2 text-lg">
+                    <button class="bg-[#1d83e3] px-5 text-white">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="filter-box">
+                        <input type="date" class="text-gray-500">
+                    </div>
+                    <div class="filter-box">
+                        <input type="text" placeholder="লেখক" class="text-gray-500">
+                        <i class="fa-regular fa-user text-gray-400"></i>
+                    </div>
+                    <div class="filter-box">
+                        <select class="text-gray-500 appearance-none">
+                            <option>সেকশন</option>
+                            <option>বাংলাদেশ</option>
+                            <option>বিশ্ব</option>
+							<option>খেলা</option>
+							<option>মতামত</option>
+                        </select>
+                        <i class="fa-solid fa-caret-down text-gray-400"></i>
+                    </div>
+                    <div class="filter-box">
+                        <select class="text-gray-500 appearance-none">
+                            <option>ধরণ</option>
+                            <option>টেক্সট</option>
+                            <option>ছবি</option>
+                            <option>ভিডিও</option>
+                            <option>সরাসরি</option>
+                            <option>সাক্ষাৎকার</option>
+                        </select>
+                        <i class="fa-solid fa-caret-down text-gray-400"></i>
+                    </div>
+                </div>
+
+                <div class="flex justify-between items-center border-b pb-3 border-gray-200">
+                    <p class="font-bold text-gray-800">প্রাপ্ত ফলাফল : ১৪০৫০২৯</p>
+                    <div class="flex items-center gap-2">
+                        <span class="font-bold">সাজানো</span>
+                        <select class="border rounded px-2 py-1 bg-white text-sm">
+                            <option>প্রাসঙ্গিক</option>
+                            <option>সর্বশেষ</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="flex flex-col md:flex-row gap-6 py-6 border-b border-gray-100 pl-4 md:pl-8">
+                        <div class="flex-1 order-2 md:order-1">
+                            <h2 class="text-xl font-bold mb-2 hover:text-blue-600 transition">
+                                <span class="text-red-600 font-black">● সরাসরি</span> • নৌ-অবরোধ যুদ্ধবিরতির লঙ্ঘন, হরমুজ খোলার পথে বাধা: গালিবালফ
+                            </h2>
+                            <p class="text-gray-500 text-base leading-relaxed">
+                                গালিবালফ বলেন, 'যুদ্ধবিরতির এমন চরম লঙ্ঘনের মধ্যে হরমুজ প্রণালি পুনরায় খুলে দেওয়া সম্ভব নয়।'
+                            </p>
+                        </div>
+                        <div class="w-full md:w-56 order-1 md:order-2 shrink-0">
+                            <img src="https://via.placeholder.com/300x180" class="w-full rounded">
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row gap-6 py-6 border-b border-gray-100 pl-4 md:pl-8">
+                        <div class="flex-1 order-2 md:order-1">
+                            <h2 class="text-xl font-bold mb-2 hover:text-blue-600 transition">
+                                ভোটার ফল চ্যালেঞ্জ করে হাইকোর্টে আরও দুই প্রার্থী
+                            </h2>
+                            <p class="text-gray-500 text-base leading-relaxed">
+                                আবেদনকারী দুই প্রার্থী হলেন কক্সবাজার-২ আসনে জামায়াতে ইসলামীর প্রার্থী এ এইচ এম হামিদুর রহমান আযাদ এবং ঝালকাঠি-১ আসনে জামায়াতের প্রার্থী ফয়জুল হক।
+                            </p>
+                            <p class="text-xs text-gray-400 mt-2 font-medium">১ ঘণ্টা আগে</p>
+                        </div>
+                        <div class="w-full md:w-56 order-1 md:order-2 shrink-0">
+                            <img src="https://via.placeholder.com/300x180" class="w-full rounded">
+                        </div>											
+                    </div>
+					
+					<div class="flex flex-col md:flex-row gap-6 py-6 border-b border-gray-100 pl-4 md:pl-8">
+                        <div class="flex-1 order-2 md:order-1">
+                            <h2 class="text-xl font-bold mb-2 hover:text-blue-600 transition">
+                                ভোটার ফল চ্যালেঞ্জ করে হাইকোর্টে আরও দুই প্রার্থী
+                            </h2>
+                            <p class="text-gray-500 text-base leading-relaxed">
+                                আবেদনকারী দুই প্রার্থী হলেন কক্সবাজার-২ আসনে জামায়াতে ইসলামীর প্রার্থী এ এইচ এম হামিদুর রহমান আযাদ এবং ঝালকাঠি-১ আসনে জামায়াতের প্রার্থী ফয়জুল হক।
+                            </p>
+                            <p class="text-xs text-gray-400 mt-2 font-medium">১ ঘণ্টা আগে</p>
+                        </div>
+                        <div class="w-full md:w-56 order-1 md:order-2 shrink-0">
+                            <img src="https://via.placeholder.com/300x180" class="w-full rounded">
+                        </div>											
+                    </div>
+					
+					
+					<div class="flex flex-col md:flex-row gap-6 py-6 border-b border-gray-100 pl-4 md:pl-8">
+                        <div class="flex-1 order-2 md:order-1">
+                            <h2 class="text-xl font-bold mb-2 hover:text-blue-600 transition">
+                                ভোটার ফল চ্যালেঞ্জ করে হাইকোর্টে আরও দুই প্রার্থী
+                            </h2>
+                            <p class="text-gray-500 text-base leading-relaxed">
+                                আবেদনকারী দুই প্রার্থী হলেন কক্সবাজার-২ আসনে জামায়াতে ইসলামীর প্রার্থী এ এইচ এম হামিদুর রহমান আযাদ এবং ঝালকাঠি-১ আসনে জামায়াতের প্রার্থী ফয়জুল হক।
+                            </p>
+                            <p class="text-xs text-gray-400 mt-2 font-medium">১ ঘণ্টা আগে</p>
+                        </div>
+                        <div class="w-full md:w-56 order-1 md:order-2 shrink-0">
+                            <img src="https://via.placeholder.com/300x180" class="w-full rounded">
+                        </div>											
+                    </div>
+					
+					
+					<div class="flex flex-col md:flex-row gap-6 py-6 border-b border-gray-100 pl-4 md:pl-8">
+                        <div class="flex-1 order-2 md:order-1">
+                            <h2 class="text-xl font-bold mb-2 hover:text-blue-600 transition">
+                                ভোটার ফল চ্যালেঞ্জ করে হাইকোর্টে আরও দুই প্রার্থী
+                            </h2>
+                            <p class="text-gray-500 text-base leading-relaxed">
+                                আবেদনকারী দুই প্রার্থী হলেন কক্সবাজার-২ আসনে জামায়াতে ইসলামীর প্রার্থী এ এইচ এম হামিদুর রহমান আযাদ এবং ঝালকাঠি-১ আসনে জামায়াতের প্রার্থী ফয়জুল হক।
+                            </p>
+                            <p class="text-xs text-gray-400 mt-2 font-medium">১ ঘণ্টা আগে</p>
+                        </div>
+                        <div class="w-full md:w-56 order-1 md:order-2 shrink-0">
+                            <img src="https://via.placeholder.com/300x180" class="w-full rounded">
+                        </div>											
+                    </div>
+                
+				
+				</div>
+
+                <div class="flex justify-center py-8">
+                    <button class="bg-[#1d83e3] text-white px-10 py-2 rounded-full font-bold">আরও</button>
+                </div>
+            </div>
+
+            <aside class="hidden lg:block">
+                <div class="border rounded p-2 text-center text-xs text-gray-400 bg-gray-50">
+                    ADVERTISEMENT
+                    <img src="https://via.placeholder.com/300x500" class="mt-2 w-full">
+                </div>
+            </aside>
+
+        </div>
+    </div>
+<style>
+    .site-footer {
+        background-color: #fff;
+        padding: 50px 0 20px;
+        border-top: 1px solid #e0e0e0;
+        font-family: 'SolaimanLipi', Arial, sans-serif;
+        margin-top: 50px;
+    }
+
+    .footer-container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    /* লোগো সেকশন */
+    .footer-logo {
+        margin-bottom: 30px;
+    }
+    .footer-logo img {
+        height: 35px;
+    }
+
+    /* ফুটার লিংক গ্রিড */
+    .footer-links-grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+    .footer-links-grid a {
+        text-decoration: none;
+        color: #333;
+        font-size: 15px;
+        font-weight: 500;
+        transition: color 0.2s;
+    }
+    .footer-links-grid a:hover {
+        color: #006a71;
+    }
+
+    /* সোশ্যাল ও অ্যাপ সেকশন */
+    .footer-middle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 0;
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+    }
+
+    .social-follow span, .app-download span {
+        display: block;
+        font-size: 12px;
+        color: #777;
+        margin-bottom: 10px;
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 12px;
+    }
+    .social-icons a {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    .fb { background: #1877F2; }
+    .tw { background: #000; }
+    .ins { background: #E4405F; }
+    .yt { background: #FF0000; }
+    .gn { background: #4285F4; }
+
+    .app-buttons {
+        display: flex;
+        gap: 10px;
+    }
+    .app-buttons img {
+        height: 40px;
+        cursor: pointer;
+    }
+
+    /* নিচে ছোট মেনু ও কপিরাইট */
+    .footer-bottom {
+        text-align: center;
+        padding-top: 20px;
+    }
+    .bottom-nav {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 15px;
+        flex-wrap: wrap;
+    }
+    .bottom-nav a {
+        text-decoration: none;
+        color: #666;
+        font-size: 13px;
+    }
+    .bottom-nav span { color: #ccc; }
+
+    .copyright {
+        font-size: 12px;
+        color: #888;
+        line-height: 1.8;
+    }
+
+    /* মোবাইল রেসপন্সিভ */
+    @media (max-width: 768px) {
+        .footer-links-grid { grid-template-columns: repeat(2, 1fr); }
+        .footer-middle { flex-direction: column; gap: 30px; text-align: center; }
+        .social-icons, .app-buttons { justify-content: center; }
+    }
+</style>
+
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="https://via.placeholder.com/180x35/000/fff?text=notunbangla.com" alt="notunbangla logo">
+        </div>
+
+        <div class="footer-links-grid">
+            <a href="#">বাংলাদেশ</a>
+            <a href="#">বিশ্ব</a>
+            <a href="#">রাজনীতি</a>
+            <a href="#">বিশেষ সংবাদ</a>
+            <a href="#">অর্থনীতি</a>
+            <a href="#">মতামত</a>
+            <a href="#">ইপেপার</a>
+            <a href="#">সাহিত্য</a>
+            <a href="#">মোবাইল ভ্যাস</a>
+        </div>
+
+        <div class="footer-middle">
+            <div class="social-follow">
+                <span>অনুসরণ করুন</span>
+                <div class="social-icons">
+                    <a href="#" class="fb">f</a>
+                    <a href="#" class="tw">𝕏</a>
+                    <a href="#" class="ins">📸</a>
+                    <a href="#" class="yt">▶</a>
+                    <a href="#" class="gn">G</a>
+                </div>
+            </div>
+            <div class="app-download">
+                <span>মোবাইল অ্যাপস ডাউনলোড করুন</span>
+                <div class="app-buttons">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Play Store">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="App Store">
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="bottom-nav">
+                <a href="#">আমাদের সম্পর্কে</a> <span>•</span>
+                <a href="#">বিজ্ঞাপন</a> <span>•</span>
+                <a href="#">সার্কুলেশন</a> <span>•</span>
+                <a href="#">নীতি ও শর্ত</a> <span>•</span>
+                <a href="#">যোগাযোগ</a> <span>•</span>
+                <a href="#">নিউজলেটার</a>
+            </div>
+            <div class="copyright">
+                স্বত্ব © ২০২৪-২০২৬ নতুন বাংলা | সম্পাদক ও প্রকাশক: মো. রাশিদুল ইসলাম
+            </div>
+        </div>
+    </div>
+</footer>
+</div>		
+	
+	
+	
+</body>
+</html>

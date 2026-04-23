@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>অ্যাডমিন মাস্টার প্যানেল | নতুন বাংলা</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Hind Siliguri', sans-serif; }
+        .notification-dot { position: absolute; top: 0; right: 0; width: 10px; height: 10px; background: red; border-radius: 50%; border: 2px solid white; }
+    </style>
+</head>
+<body class="bg-gray-100 flex h-screen overflow-hidden">
+
+    <aside class="w-64 bg-slate-900 text-white flex flex-col shadow-xl">
+        <div class="p-6 bg-slate-950 text-center border-b border-slate-800">
+            <h1 class="text-2xl font-black text-orange-500">নতুন বাংলা</h1>
+            <p class="text-[10px] text-gray-400 tracking-widest font-bold">ADMIN CENTRAL</p>
+        </div>
+        
+        <nav class="flex-1 mt-4">
+            <a href="#" class="flex items-center px-6 py-3 bg-orange-600 text-white font-bold">📊 ড্যাশবোর্ড</a>
+            <a href="#" class="flex items-center px-6 py-3 hover:bg-slate-800 text-gray-300 transition">📝 সব সংবাদ (All News)</a>
+            <a href="#" class="flex items-center px-6 py-3 hover:bg-slate-800 text-gray-300 transition relative">
+                📥 পেন্ডিং সংবাদ 
+                <span class="ml-auto bg-red-500 text-[10px] px-2 py-0.5 rounded-full">৫</span>
+            </a>
+            <a href="#" class="flex items-center px-6 py-3 hover:bg-slate-800 text-gray-300 transition">📂 ক্যাটাগরি সেটআপ</a>
+            <a href="#" class="flex items-center px-6 py-3 hover:bg-slate-800 text-gray-300 transition">👤 ইউজার/সাংবাদিক</a>
+            <a href="#" class="flex items-center px-6 py-3 hover:bg-slate-800 text-gray-300 transition">⚙️ সাইট সেটিংস</a>
+        </nav>
+
+        <div class="p-4 border-t border-slate-800">
+            <button class="w-full bg-slate-800 py-2 rounded text-sm hover:bg-red-600 transition">লগ আউট</button>
+        </div>
+    </aside>
+
+    <main class="flex-1 flex flex-col overflow-hidden">
+        
+        <header class="h-16 bg-white border-b flex items-center justify-between px-8 shadow-sm">
+            <div class="text-gray-700 font-bold text-lg">অ্যাডমিন কন্ট্রোল সেন্টার</div>
+            
+            <div class="flex items-center space-x-6">
+                <div class="relative cursor-pointer">
+                    <span class="text-2xl">🔔</span>
+                    <span class="notification-dot animate-pulse"></span>
+                </div>
+                
+                <div class="flex items-center space-x-2 border-l pl-6">
+                    <img src="https://via.placeholder.com/35" class="rounded-full">
+                    <span class="font-bold text-sm">সুপার অ্যাডমিন</span>
+                </div>
+            </div>
+        </header>
+
+        <section class="flex-1 overflow-y-auto p-8">
+            
+            <div class="mb-8 bg-orange-50 border-l-4 border-orange-500 p-4 rounded-r-lg shadow-sm flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <div class="text-3xl">📧</div>
+                    <div>
+                        <h4 class="font-bold text-orange-800">নতুন সংবাদের আবেদন!</h4>
+                        <p class="text-sm text-orange-700">৩ জন সাংবাদিক মোট ৫টি সংবাদ অনুমোদনের জন্য পাঠিয়েছেন।</p>
+                    </div>
+                </div>
+                <button class="bg-orange-500 text-white px-4 py-2 rounded font-bold hover:bg-orange-600 shadow">এখনই দেখুন</button>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-10">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <p class="text-gray-500 text-sm font-bold">মোট পাবলিশ খবর</p>
+                    <h3 class="text-2xl font-black text-gray-800">৪,৫২০</h3>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <p class="text-gray-500 text-sm font-bold">পেন্ডিং খবর</p>
+                    <h3 class="text-2xl font-black text-red-600">০৫</h3>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <p class="text-gray-500 text-sm font-bold">আজকের ভিউ</p>
+                    <h3 class="text-2xl font-black text-blue-600">১২,৪৫০</h3>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <p class="text-gray-500 text-sm font-bold">মোট ইউজার</p>
+                    <h3 class="text-2xl font-black text-green-600">৮৫ জন</h3>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md border overflow-hidden">
+                <div class="p-6 border-b bg-gray-50 flex justify-between items-center">
+                    <h3 class="font-bold text-gray-800">অনুমোদনের অপেক্ষায় থাকা সংবাদসমূহ</h3>
+                    <span class="bg-red-100 text-red-700 text-xs px-3 py-1 rounded-full font-bold uppercase">Action Required</span>
+                </div>
+                <table class="w-full text-left border-collapse">
+                    <thead class="bg-gray-100 text-gray-600 text-sm">
+                        <tr>
+                            <th class="p-4 border-b">শিরোনাম</th>
+                            <th class="p-4 border-b">দাতা (Correspondent)</th>
+                            <th class="p-4 border-b">সময়</th>
+                            <th class="p-4 border-b">অ্যাকশন</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gray-700 text-sm">
+                        <tr class="hover:bg-gray-50 border-b">
+                            <td class="p-4 font-semibold">উল্লাপাড়ায় কৃষি মেলার উদ্বোধন...</td>
+                            <td class="p-4">আবু বক্কার সিদ্দিক</td>
+                            <td class="p-4 italic">১০ মিনিট আগে</td>
+                            <td class="p-4 space-x-2">
+                                <button class="bg-green-500 text-white px-3 py-1 rounded shadow hover:bg-green-600">অ্যাপ্রুভ</button>
+                                <button class="bg-red-500 text-white px-3 py-1 rounded shadow hover:bg-red-600">ডিলিট</button>
+                                <button class="bg-blue-500 text-white px-3 py-1 rounded shadow hover:bg-blue-600">দেখুন</button>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 border-b">
+                            <td class="p-4 font-semibold">সিরাজগঞ্জে নতুন সেতুর কাজ শেষ...</td>
+                            <td class="p-4">মো. রশিদুল ইসলাম</td>
+                            <td class="p-4 italic">১ ঘণ্টা আগে</td>
+                            <td class="p-4 space-x-2">
+                                <button class="bg-green-500 text-white px-3 py-1 rounded shadow hover:bg-green-600">অ্যাপ্রুভ</button>
+                                <button class="bg-red-500 text-white px-3 py-1 rounded shadow hover:bg-red-600">ডিলিট</button>
+                                <button class="bg-blue-500 text-white px-3 py-1 rounded shadow hover:bg-blue-600">দেখুন</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+</html>

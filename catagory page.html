@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    
+	<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>নতুন বাংলা | বৈষম্যের বিরুদ্ধ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --nb-teal: #006a71; /* আপনার লোগোর রঙ */
+            --nb-red: #ff1f1f;  /* লোগোর লাল রঙ */
+            --border: #e5e5e5;
+            --text-main: #333;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'SolaimanLipi', Arial, sans-serif; }
+        body { background-color: #fff; color: var(--text-main); line-height: 1.6; }
+        .container { max-width: 1240px; margin: 0 auto; padding: 0 15px; }
+
+        /* --- Top Logo Section --- */
+        .header-top { display: flex; justify-content: space-between; align-items: center; padding: 15px 0; }
+        .logo img { height: 75px; }
+        .top-news-slider { display: flex; gap: 20px; }
+        .tn-item { display: flex; gap: 10px; width: 260px; border-left: 1px solid var(--border); padding-left: 12px; }
+        .tn-item img { width: 60px; height: 60px; object-fit: cover; }
+        .tn-item p { font-size: 14px; cursor: pointer; }
+        .play-icon { color: var(--nb-red); margin-right: 4px; }
+
+        /* --- Navigation --- */
+        nav { border-top: 1px solid var(--border); border-bottom: 2px solid var(--nb-teal); position: sticky; top: 0; background: #fff; z-index: 1000; }
+        .nav-wrapper { display: flex; justify-content: space-between; align-items: center; }
+        .main-menu { display: flex; list-style: none; }
+        .main-menu li a { display: block; padding: 15px 12px; text-decoration: none; color: #000; font-weight: bold; font-size: 15px; }
+        .main-menu li a:hover { color: var(--nb-teal); }
+        .nav-right { display: flex; border-left: 1px solid var(--border); }
+        .nav-btn { padding: 15px 18px; border-right: 1px solid var(--border); cursor: pointer; text-decoration: none; color: #333; }
+
+        /* --- Main Grid Layout --- */
+        .main-grid { display: grid; grid-template-columns: 280px 1fr 300px; gap: 25px; margin-top: 30px; }
+        
+        /* Column Styling */
+        .col-left, .col-mid { border-right: 1px solid var(--border); padding-right: 15px; }
+        .news-card { margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px solid var(--border); }
+        .news-card img { width: 100%; border-radius: 3px; }
+        .news-card h3 { font-size: 19px; margin-top: 10px; cursor: pointer; }
+        .news-card h3:hover { color: var(--nb-teal); }
+
+        /* Lead News */
+        .lead-news h2 { font-size: 30px; margin: 15px 0; line-height: 1.2; }
+        .live-tag { color: var(--nb-red); font-weight: bold; }
+
+        /* Ad & Sidebar */
+        .ad-space { background: #f8f8f8; border: 1px solid #ddd; height: 250px; display: flex; align-items: center; justify-content: center; color: #999; margin-bottom: 20px; }
+        .opinion-box { border-top: 2px solid var(--nb-teal); padding-top: 15px; }
+    </style>
+
+    <div class="container">
+        <header class="header-top">
+            <div class="logo">
+                <img src="imges/NotunBangla-Logo-Final.png" alt="নতুন বাংলা">
+            </div>
+            <div class="top-news-slider">
+                <div class="tn-item">
+                    <img src="imges/notunbangla isral2.jpg" alt="news">
+                    <p><i class="fa-regular fa-circle-play play-icon"></i>দেশের অর্থনীতিতে নতুন গতির সঞ্চার...</p>
+                </div>
+                <div class="tn-item">
+                    <img src="imges/notunbangla2.jpg" alt="news">
+                    <p><i class="fa-solid fa-camera play-icon"></i>রঙে-উৎসবে নববর্ষ: চারুকলা থেকে রমনা</p>
+                </div>
+				 <div class="tn-item">
+                    <img src="imges/notunbangla10.jpg" alt="news">
+                    <p><i class="fa-solid fa-camera play-icon"></i>জ্বালানি সংকট মোকাবিলা বড় চ্যালেঞ্জ</p>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <nav>
+        <div class="container nav-wrapper">
+            <ul class="main-menu">
+                 <li><a href="#">সর্বশেষ</a></li>
+                <li><a href="#">বাংলাদেশ</a></li>
+                <li><a href="#">রাজনীতি</a></li>
+                <li><a href="#">বিশ্ব</a></li>
+                <li><a href="#">খেলা</a></li>
+                <li><a href="#">মতামত</a></li>
+				<li><a href="#">বিনোদন</a></li>
+				<li><a href="#">জীবন যাপন</a></li>
+				<li><a href="#">সাহিত্য</a></li>
+				
+            </ul>
+           
+		   <div class="nav-right">
+                <div class="nav-btn"><i class="fa-solid fa-magnifying-glass">খুঁজুন</i></div>
+                <div class="nav-btn"><i class="epaper"></i>ই-পেপার</div>
+				<div class="nav-btn" style="color: var(--nb-red); font-weight: bold;">Eng</div>
+                <div class="nav-btn"><i class="fa-solid fa-user"></i> লগইন</div>
+            </div>
+        </div>
+    </nav>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Hind Siliguri', sans-serif; }
+        /* কিকার বা সাব-হেডিংয়ের জন্য হালকা ধূসর রঙ */
+        .kicker { color: #555555; }
+        /* প্রধান শিরোনামের জন্য গাঢ় কালো রঙ */
+        .headline { color: #1B1B1B; }
+    </style>
+</head>
+	
+	
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* ফন্ট ইমপোর্ট (সোলাইমান লিপি বা একই ধরণের ফন্ট) */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        /* লোগো সেকশন */
+        .logo-area {
+            margin-bottom: 15px;
+        }
+
+        .logo-area h1 {
+            color: #bd0000; /* লাল লোগো কালার */
+            font-size: 45px;
+            margin: 0;
+            font-weight: bold;
+            letter-spacing: -1px;
+        }
+
+        /* মেনুবার স্টাইল */
+        .sub-menu {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .sub-menu li {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+        }
+
+        .sub-menu li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        /* মেনুর সেই নীল ডট */
+        .sub-menu li::before {
+            content: "•";
+            color: #007bff;
+            font-weight: bold;
+            margin-right: 8px;
+            font-size: 20px;
+        }
+
+        /* প্রথম আইটেমের ডট থাকবে না যদি লোগোর ঠিক নিচে হয় */
+        .sub-menu li:first-child::before {
+            content: "";
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="bottom-full-ad">
+        <img src="https://via.placeholder.com/1200x120?text=Bottom+Full+Width+Ad" style="width:100%; height:100%; object-fit:cover;">
+    </div>
+
+    <div class="header-container">
+        <div class="logo-area">
+            <h1>বাংলাদেশ</h1>
+        </div>
+
+        <ul class="sub-menu">
+            <li><a href="#">রাজধানী</a></li>
+            <li><a href="#">জেলা</a></li>
+            <li><a href="#">করোনাভাইরাস</a></li>
+            <li><a href="#">অপরাধ</a></li>
+            <li><a href="#">পরিবেশ</a></li>
+        </ul>
+    </div>
+
+	
+	
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background: #fff; }
+        .main-wrapper { max-width: 1200px; margin: 0 auto; padding: 20px; }
+
+        /* প্রধান লেআউট */
+        .content-layout {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 25px;
+        }
+
+        /* বাম পাশের নিউজ এরিয়া */
+        .news-area {
+            border-right: 1px solid #e0e0e0; /* সাইডবারের সাথে আলাদা করার দাগ */
+            padding-right: 20px;
+        }
+
+        /* ওপরের লিড ও মেজো নিউজ */
+        .top-row {
+            display: flex;
+            gap: 0;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 30px;
+        }
+
+        .lead-news { flex: 2; padding-right: 20px; border-right: 1px solid #e0e0e0; position: relative; height: 350px; overflow: hidden; border-radius: 4px; }
+        .lead-news img { width: 100%; height: 100%; object-fit: cover; }
+        .lead-overlay {
+            position: absolute; bottom: 0; left: 0; right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.9));
+            padding: 20px; color: #fff;
+        }
+
+        .mid-news { flex: 1; padding-left: 20px; }
+        .mid-news img { width: 100%; height: 180px; object-fit: cover; border-radius: 4px; }
+
+        /* নিচের ৩টি নিউজ এবং তাদের মাঝখানের দাগ */
+        .bottom-three-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 0;
+        }
+        .bottom-card {
+            padding: 0 15px;
+            border-right: 1px solid #e0e0e0; /* কার্ডগুলোর মাঝখানের দাগ */
+        }
+        .bottom-card:first-child { padding-left: 0; }
+        .bottom-card:last-child { border-right: none; padding-right: 0; }
+
+        .bottom-card img { width: 100%; height: 140px; object-fit: cover; border-radius: 4px; }
+        .bottom-card h3 { font-size: 15px; margin: 10px 0; line-height: 1.3; }
+
+        /* ডান পাশের সাইডবার */
+        .sidebar { display: flex; flex-direction: column; gap: 20px; }
+        .side-ad img { width: 100%; height: 150px; object-fit: cover; border-radius: 4px; border: 1px solid #eee; }
+        
+        .smart-search {
+            background: #f8f9fa; border: 1px solid #d1d5db;
+            border-top: 5px solid #007bff; padding: 20px; border-radius: 4px;
+        }
+        .custom-select { width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; }
+        .search-btn { width: 100%; background: #007bff; color: #fff; border: none; padding: 12px; font-weight: bold; cursor: pointer; border-radius: 4px; }
+
+        /* নিচের বড় বিজ্ঞাপন */
+        .bottom-full-ad {
+            margin-top: 40px;
+            width: 100%;
+            height: 120px;
+            border: 1px solid #ddd;
+        }
+
+        .time { font-size: 11px; color: #999; }
+        .red-text { color: #bd0000; font-weight: bold; }
+    </style>
+</head>
+
+
+<div class="main-wrapper">
+    <div class="content-layout">
+        
+        <div class="news-area">
+            <div class="top-row">
+                <div class="lead-news">
+                    <img src="https://via.placeholder.com/800x400" alt="Lead">
+                    <div class="lead-overlay">
+                        <h2 style="margin:0; font-size: 20px;">ঢাকার ভারসাম্যপূর্ণ অবস্থানের প্রশংসা করে তেহরান</h2>
+                        <div class="time" style="color: #ccc;">৩২ মিনিট আগে</div>
+                    </div>
+                </div>
+                <div class="mid-news">
+                    <img src="https://via.placeholder.com/400x200" alt="Mid">
+                    <h3 style="font-size: 16px;">গ্রামীণ হেলথটেক চালু করল ‘সুখী অনলাইন হেলথস্টোর’</h3>
+					<p>আবহাওয়া অফিসের পূর্বাভাস অনুযায়ী সারা দেশে হালকা থেকে মাঝারি বৃষ্টি হতে পারে। রাজধানীসহ দেশের বিভিন্ন স্থানে আকাশ মেঘলা...</p>
+					<div class="time">৪০ মিনিট আগে</div>
+                </div>
+            </div>
+
+            <div class="bottom-three-grid">
+                <div class="bottom-card">
+                    <img src="https://via.placeholder.com/300x150">
+                    <h3>স্টাডি অ্যাব্রোড ফেয়ার: কুইজ বিজয়ীরা পেলেন পুরস্কার</h3>
+                    <p>আবহাওয়া অফিসের পূর্বাভাস অনুযায়ী সারা দেশে হালকা থেকে মাঝারি বৃষ্টি হতে পারে। রাজধানীসহ দেশের বিভিন্ন স্থানে আকাশ মেঘলা...</p>
+					<div class="time">১ ঘণ্টা আগে</div>
+                </div>
+                <div class="bottom-card">
+                    <img src="https://via.placeholder.com/300x150">
+                    <h3><span class="red-text">নোয়াবের সঙ্গে বৈঠক</span> • সংবাদপত্রের স্বাধীনতা</h3>
+                    <p>আবহাওয়া অফিসের পূর্বাভাস অনুযায়ী সারা দেশে হালকা থেকে মাঝারি বৃষ্টি হতে পারে। রাজধানীসহ দেশের বিভিন্ন স্থানে আকাশ মেঘলা...</p>
+					<div class="time">১ ঘণ্টা আগে</div>
+                </div>
+                <div class="bottom-card">
+                    <img src="https://via.placeholder.com/300x150">
+                    <h3>ঝিনাইদহে ট্রাকের চাকায় পিষ্ট হয়ে দুই আরোহী নিহত</h3>
+                    <p>আবহাওয়া অফিসের পূর্বাভাস অনুযায়ী সারা দেশে হালকা থেকে মাঝারি বৃষ্টি হতে পারে। রাজধানীসহ দেশের বিভিন্ন স্থানে আকাশ মেঘলা...</p>
+					<div class="time">১ ঘণ্টা আগে</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="side-ad">
+                <img src="https://via.placeholder.com/300x150?text=Side+Ad">
+            </div>
+            <div class="smart-search">
+                <span style="font-weight:bold; display:block; margin-bottom:15px; color:#007bff;">🔍 আমার এলাকার খবর</span>
+                <select class="custom-select"><option>বিভাগ</option></select>
+                <select class="custom-select"><option>জেলা</option></select>
+                <select class="custom-select"><option>উপজেলা</option></select>
+                <button class="search-btn">খুঁজুন</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-full-ad">
+        <img src="https://via.placeholder.com/1200x120?text=Bottom+Full+Width+Ad" style="width:100%; height:100%; object-fit:cover;">
+    </div>
+</div>
+
+<style>
+    /* নিউজ লিস্ট সেকশন স্টাইল */
+    .news-list-container {
+        margin-top: 30px;
+        max-width: 800px; /* স্ক্রিনশট অনুযায়ী লিস্টগুলো বাম দিকে বেশি থাকে */
+    }
+
+    .list-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 20px 0;
+        border-bottom: 1px solid #eee; /* প্রতি নিউজের নিচে হালকা দাগ */
+        transition: background 0.2s;
+    }
+
+    .list-item:hover {
+        background-color: #fafafa;
+    }
+
+    .list-content {
+        flex: 1;
+        padding-right: 20px;
+    }
+
+    .list-content h3 {
+        margin: 0 0 10px 0;
+        font-size: 20px;
+        line-height: 1.4;
+        color: #1a1a1a;
+        cursor: pointer;
+    }
+
+    .list-content h3:hover {
+        color: #bd0000;
+    }
+
+    .list-content p {
+        margin: 0;
+        font-size: 15px;
+        color: #555;
+        line-height: 1.6;
+    }
+
+    .list-image {
+        width: 180px;
+        height: 110px;
+        flex-shrink: 0;
+    }
+
+    .list-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 4px;
+    }
+
+    /* নীল রঙের 'আরও' বাটন */
+    .load-more-container {
+        text-align: center;
+        margin: 40px 0;
+    }
+
+    .load-more-btn {
+        background-color: #007bff;
+        color: white;
+        padding: 12px 35px;
+        border: none;
+        border-radius: 25px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    .load-more-btn:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+<style>
+    /* মেইন কন্টেইনার */
+    .balanced-layout {
+        display: grid;
+        /* তিন কলামের গ্রিড: ১টি বামে ফাঁকা, ২টি মাঝখানে নিউজ, ১টি ডানে বিজ্ঞাপন */
+        grid-template-columns: 1fr 2.5fr 1fr; 
+        gap: 25px;
+        max-width: 1300px;
+        margin: 40px auto;
+        padding: 0 15px;
+    }
+
+    /* বাম পাশের ফাঁকা জায়গা */
+    .left-spacer {
+        /* এখানে কিছুই থাকবে না, এটি শুধু জায়গা দখল করবে */
+    }
+
+    /* মাঝখানের নিউজ লিস্ট */
+    .middle-list-area {
+        border-left: 1px solid #e0e0e0; /* বামে এবং ডানে দাগ দিয়ে আলাদা করা */
+        border-right: 1px solid #e0e0e0;
+        padding: 0 25px;
+    }
+
+    .list-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .list-item:last-child {
+        border-bottom: none;
+    }
+
+    .list-text {
+        flex: 1;
+        padding-right: 20px;
+    }
+
+    .list-text h3 {
+        margin: 0 0 8px;
+        font-size: 19px;
+        color: #1a1a1a;
+        line-height: 1.4;
+    }
+
+    .list-text p {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 10px;
+    }
+
+    .list-img {
+        width: 140px;
+        height: 90px;
+        flex-shrink: 0;
+    }
+
+    .list-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 4px;
+    }
+
+    /* ডান পাশের সাইডবার বিজ্ঞাপন */
+    .right-sidebar-ad {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sticky-ad-box {
+        width: 100%;
+        height: 450px;
+        background: #fdfdfd;
+        border: 1px solid #eee;
+        position: sticky;
+        top: 20px;
+    }
+
+    /* আরও পড়ুন বাটন */
+    .load-more-wrap {
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .btn-blue {
+        background: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 40px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+</style>
+
+<div class="balanced-layout">
+    <div class="left-spacer"></div>
+
+    <div class="middle-list-area">
+        <div class="list-item">
+            <div class="list-text">
+                <h3>চট্টগ্রামের সেই দুই মিষ্টি বিক্রেতা গ্রেপ্তার</h3>
+                <p>প্রতারণার দায়ে চট্টগ্রামের জনপ্রিয় দুই মিষ্টি বিক্রেতাকে আটক করেছে ডিবি পুলিশ। তাদের বিরুদ্ধে ওজনে কারচুপির অভিযোগ ছিল...</p>
+                <div style="font-size: 12px; color: #999;">৩ ঘণ্টা আগে</div>
+            </div>
+            <div class="list-img">
+                <img src="https://via.placeholder.com/160x100" alt="News">
+            </div>
+        </div>
+
+        <div class="list-item">
+            <div class="list-text">
+                <h3>সুনামগঞ্জ ও মেঘালয়ে বৃষ্টিপাত বেড়ে বন্যার আশঙ্কা</h3>
+                <p>সীমান্তবর্তী জেলাগুলোতে নদ-নদীর পানি দ্রুত বাড়ছে। প্রশাসনের পক্ষ থেকে সতর্কতা জারি করা হয়েছে...</p>
+                <div style="font-size: 12px; color: #999;">৪ ঘণ্টা আগে</div>
+            </div>
+            <div class="list-img">
+                <img src="https://via.placeholder.com/160x100" alt="News">
+            </div>
+        </div>
+		
+				
+		<div class="list-item">
+            <div class="list-text">
+                <h3>সুনামগঞ্জ ও মেঘালয়ে বৃষ্টিপাত বেড়ে বন্যার আশঙ্কা</h3>
+                <p>সীমান্তবর্তী জেলাগুলোতে নদ-নদীর পানি দ্রুত বাড়ছে। প্রশাসনের পক্ষ থেকে সতর্কতা জারি করা হয়েছে...</p>
+                <div style="font-size: 12px; color: #999;">৪ ঘণ্টা আগে</div>
+            </div>
+            <div class="list-img">
+                <img src="https://via.placeholder.com/160x100" alt="News">
+            </div>
+        </div>
+		
+		
+		<div class="side-ad">
+                <img src="https://via.placeholder.com/300x150?text=Side+Ad">
+            </div>
+		
+		
+		<div class="list-item">
+            <div class="list-text">
+                <h3>সুনামগঞ্জ ও মেঘালয়ে বৃষ্টিপাত বেড়ে বন্যার আশঙ্কা</h3>
+                <p>সীমান্তবর্তী জেলাগুলোতে নদ-নদীর পানি দ্রুত বাড়ছে। প্রশাসনের পক্ষ থেকে সতর্কতা জারি করা হয়েছে...</p>
+                <div style="font-size: 12px; color: #999;">৪ ঘণ্টা আগে</div>
+            </div>
+            <div class="list-img">
+                <img src="https://via.placeholder.com/160x100" alt="News">
+            </div>
+        </div>
+		
+		<div class="list-item">
+            <div class="list-text">
+                <h3>সুনামগঞ্জ ও মেঘালয়ে বৃষ্টিপাত বেড়ে বন্যার আশঙ্কা</h3>
+                <p>সীমান্তবর্তী জেলাগুলোতে নদ-নদীর পানি দ্রুত বাড়ছে। প্রশাসনের পক্ষ থেকে সতর্কতা জারি করা হয়েছে...</p>
+                <div style="font-size: 12px; color: #999;">৪ ঘণ্টা আগে</div>
+            </div>
+            <div class="list-img">
+                <img src="https://via.placeholder.com/160x100" alt="News">
+            </div>
+        </div>
+		
+		
+		<div class="list-item">
+            <div class="list-text">
+                <h3>সুনামগঞ্জ ও মেঘালয়ে বৃষ্টিপাত বেড়ে বন্যার আশঙ্কা</h3>
+                <p>সীমান্তবর্তী জেলাগুলোতে নদ-নদীর পানি দ্রুত বাড়ছে। প্রশাসনের পক্ষ থেকে সতর্কতা জারি করা হয়েছে...</p>
+                <div style="font-size: 12px; color: #999;">৪ ঘণ্টা আগে</div>
+            </div>
+            <div class="list-img">
+                <img src="https://via.placeholder.com/160x100" alt="News">
+            </div>
+        </div>
+		
+
+        <div class="load-more-wrap">
+            <button class="btn-blue">আরও</button>
+        </div>
+    </div>
+
+    <div class="right-sidebar-ad">
+        <div class="sticky-ad-box">
+            <img src="https://via.placeholder.com/300x450?text=Side+Ad+Banner" style="width:100%; height:100%; object-fit:cover;">
+        </div>
+    </div>
+</div>
+
+<style>
+    /* ফুটার মেইন স্টাইল */
+    footer {
+        background-color: #fff;
+        border-top: 2px solid #bd0000; /* লোগোর লাল রঙের সাথে মিল রেখে বর্ডার */
+        padding: 50px 0 20px;
+        margin-top: 50px;
+    }
+
+    .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    .footer-top {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1fr 1fr; /* লোগোর জন্য বড় জায়গা, বাকিগুলো মেনু */
+        gap: 40px;
+        padding-bottom: 40px;
+    }
+
+    /* ফুটার লোগো */
+    .footer-logo h2 {
+        color: #bd0000;
+        font-size: 35px;
+        margin: 0 0 15px 0;
+        font-weight: bold;
+    }
+
+    .footer-logo p {
+        font-size: 14px;
+        color: #666;
+        line-height: 1.6;
+    }
+
+    /* ফুটার মেনু হেডলাইন */
+    .footer-column h4 {
+        color: #1a1a1a;
+        font-size: 18px;
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+    .footer-column h4::after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 30px;
+        height: 2px;
+        background-color: #007bff; /* নীল রঙের ছোট হাইলাইট */
+    }
+
+    /* ফুটার লিঙ্কস */
+    .footer-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer-links li {
+        margin-bottom: 10px;
+    }
+
+    .footer-links li a {
+        text-decoration: none;
+        color: #555;
+        font-size: 15px;
+        transition: color 0.2s;
+    }
+
+    .footer-links li a:hover {
+        color: #bd0000;
+    }
+
+    /* সোশ্যাল মিডিয়া আইকন স্টাইল (ফাঁকা রাখা হলো আইকনের জন্য) */
+    .social-icons {
+        margin-top: 20px;
+        display: flex;
+        gap: 15px;
+    }
+
+    .social-icon {
+        width: 35px;
+        height: 35px;
+        background-color: #f0f0f0;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #333;
+    }
+
+    /* কপিরাইট অংশ */
+    .footer-bottom {
+        border-top: 1px solid #eee;
+        padding-top: 20px;
+        text-align: center;
+        font-size: 13px;
+        color: #999;
+    }
+</style>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <h2>বাংলাদেশ</h2>
+                <p>দেশের শীর্ষস্থানীয় অনলাইন নিউজ পোর্টাল। সর্বশেষ সংবাদ, বিশ্লেষণ এবং ভিডিওর জন্য আমাদের সাথেই থাকুন।</p>
+                <div class="social-icons">
+                    <span class="social-icon">f</span>
+                    <span class="social-icon">t</span>
+                    <span class="social-icon">y</span>
+                    <span class="social-icon">in</span>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h4>ক্যাটাগরি</h4>
+                <ul class="footer-links">
+                    <li><a href="#">রাজনীতি</a></li>
+                    <li><a href="#">অর্থনীতি</a></li>
+                    <li><a href="#">খেলাধুলা</a></li>
+                    <li><a href="#">বিনোদন</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>তথ্য</h4>
+                <ul class="footer-links">
+                    <li><a href="#">আমাদের সম্পর্কে</a></li>
+                    <li><a href="#">যোগাযোগ</a></li>
+                    <li><a href="#">বিজ্ঞাপন</a></li>
+                    <li><a href="#">গোপনীয়তা নীতি</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>অ্যাপ ডাউনলোড</h4>
+                <div style="background: #000; color: #fff; padding: 8px 12px; border-radius: 5px; font-size: 12px; margin-bottom: 10px; cursor: pointer; text-align: center;">
+                    Google Play
+                </div>
+                <div style="background: #000; color: #fff; padding: 8px 12px; border-radius: 5px; font-size: 12px; cursor: pointer; text-align: center;">
+                    App Store
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+           <p>সম্পাদক ও প্রকাশক মো.রাশিদুল ইসলাম। &copy; নতুন বাংলা ২০২৪-২০২৬| সর্বস্বত্ব সংরক্ষিত</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

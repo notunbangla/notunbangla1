@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>নিউজ ডেস্ক মাস্টার | নতুন বাংলা</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Hind Siliguri', sans-serif; background-color: #f0f2f5; }
+        .sidebar { background-color: #31a2a2; }
+        .header-top { background-color: #31a2a2; }
+        .input-label { font-size: 12px; font-weight: 700; color: #444; margin-bottom: 3px; display: block; }
+        .required::after { content: " *"; color: red; }
+        .custom-input { width: 100%; border: 1px solid #ccc; padding: 6px; border-radius: 2px; font-size: 13px; outline: none; }
+        .custom-input:focus { border-color: #31a2a2; box-shadow: 0 0 3px rgba(49, 162, 162, 0.3); }
+        .notification-dot { position: absolute; top: -2px; right: -2px; width: 10px; height: 10px; background: red; border-radius: 50%; border: 2px solid white; }
+    </style>
+</head>
+<body class="flex h-screen overflow-hidden">
+
+    <aside class="w-64 sidebar text-white flex flex-col shadow-lg overflow-y-auto">
+        <div class="p-4 flex items-center border-b border-teal-600">
+            <span class="text-xl font-bold italic">নতুন বাংলা</span>
+        </div>
+        <nav class="mt-2 text-sm">
+            <a href="#" class="flex items-center px-4 py-3 bg-teal-800">🏠 Dashboard</a>
+            <a href="#" class="flex items-center px-4 py-3 hover:bg-teal-700">✍️ Add New Article</a>
+            <a href="#" class="flex items-center px-4 py-3 hover:bg-teal-700 relative">
+                📥 Pending News <span class="ml-auto bg-red-500 text-[10px] px-2 py-0.5 rounded-full">৫</span>
+            </a>
+            <a href="#" class="flex items-center px-4 py-3 hover:bg-teal-700">👥 User Management</a>
+        </nav>
+        
+        <div class="mt-auto p-4 bg-teal-900 mx-2 mb-4 rounded-lg">
+            <p class="text-xs font-bold mb-2 border-b border-teal-700 pb-1">💬 সাংবাদিক চ্যাট</p>
+            <div class="h-32 overflow-y-auto text-[10px] space-y-2 mb-2">
+                <p><b>বক্কার:</b> ভাই খবর পাঠালাম।</p>
+                <p class="text-yellow-300"><b>এডমিন:</b> চেক করছি বন্ধু।</p>
+            </div>
+            <input type="text" placeholder="মেসেজ..." class="w-full bg-teal-800 border-none p-1 text-[10px] rounded outline-none">
+        </div>
+    </aside>
+
+    <main class="flex-1 flex flex-col overflow-hidden">
+        
+        <header class="h-12 header-top flex items-center justify-between px-6 text-white shadow-md">
+            <div class="font-bold">Article Desktop</div>
+            <div class="flex items-center space-x-6">
+                <div class="relative cursor-pointer">
+                    <span class="text-lg">🔔</span>
+                    <span class="notification-dot animate-pulse"></span>
+                </div>
+                <div class="flex items-center space-x-2 text-xs">
+                    <img src="https://via.placeholder.com/25" class="rounded-full">
+                    <span>admin@muktoprovat.com</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="flex-1 overflow-y-auto p-4">
+            <div class="bg-white border border-gray-300 rounded shadow-sm">
+                <div class="bg-teal-600 text-white px-4 py-1.5 font-bold text-sm flex justify-between items-center">
+                    <span>Add New Article</span>
+                    <span class="text-[10px] bg-white text-teal-700 px-2 rounded">Today: 2026-04-22</span>
+                </div>
+                
+                <form class="p-5 space-y-5">
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-6 items-start border-b pb-4">
+                        <div class="md:col-span-1">
+                            <label class="input-label">Photo</label>
+                            <input type="file" class="text-[10px] mb-2">
+                            <div class="border p-2 bg-gray-50 w-full aspect-square flex items-center justify-center">
+                                <img src="https://via.placeholder.com/150?text=SORRY+IMAGE" class="max-h-full">
+                            </div>
+                        </div>
+                        <div class="md:col-span-3 grid grid-cols-2 gap-4">
+                            <div>
+                                <label class="input-label required">Article Date</label>
+                                <input type="date" value="2026-04-22" class="custom-input">
+                            </div>
+                            <div>
+                                <label class="input-label required">Menu Name</label>
+                                <select class="custom-input"><option>Select A Menu Name</option></select>
+                            </div>
+                            <div class="col-span-2">
+                                <label class="input-label">Show Details</label>
+                                <label class="mr-4 text-xs"><input type="radio" name="details" checked> YES</label>
+                                <label class="text-xs"><input type="radio" name="details"> NO</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-4 gap-4">
+                        <div>
+                            <label class="input-label">Correspondent</label>
+                            <select class="custom-input"><option>--Select One--</option></select>
+                        </div>
+                        <div>
+                            <label class="input-label">Division</label>
+                            <select class="custom-input"><option>--Division--</option></select>
+                        </div>
+                        <div>
+                            <label class="input-label">District</label>
+                            <select class="custom-input"><option>--District--</option></select>
+                        </div>
+                        <div>
+                            <label class="input-label">Upozila</label>
+                            <select class="custom-input"><option>--Upozila--</option></select>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                        <div class="md:col-span-2">
+                            <label class="input-label required">Article Title</label>
+                            <input type="text" placeholder="Page Title" class="custom-input">
+                        </div>
+                        <div>
+                            <label class="input-label">Pre title</label>
+                            <input type="text" placeholder="Pre Title" class="custom-input">
+                        </div>
+                        <div>
+                            <label class="input-label">Long Head</label>
+                            <input type="text" placeholder="Page Title" class="custom-input">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                        <div>
+                            <label class="input-label">Sub title</label>
+                            <input type="text" placeholder="Sub Title" class="custom-input">
+                        </div>
+                        <div>
+                            <label class="input-label">Image Caption</label>
+                            <input type="text" placeholder="Image Caption" class="custom-input">
+                        </div>
+                        <div>
+                            <label class="input-label">Prothinidhi</label>
+                            <input type="text" placeholder="Prothinidhi" class="custom-input">
+                        </div>
+                        <div>
+                            <label class="input-label">Writer Name</label>
+                            <input type="text" placeholder="Writer Name" class="custom-input">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="input-label">Summary</label>
+                            <textarea rows="3" placeholder="Summary" class="custom-input resize-none"></textarea>
+                        </div>
+                        <div>
+                            <label class="input-label">Sort Title / Description</label>
+                            <textarea rows="3" placeholder="Short Description" class="custom-input resize-none"></textarea>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="input-label">News Details</label>
+                        <div class="border border-gray-300 rounded overflow-hidden">
+                            <div class="bg-gray-100 p-2 border-b flex space-x-3 text-[10px] font-bold">
+                                <span>B</span> <span>I</span> <span>U</span> | <span>Font</span> | <span>Size</span> | <span>Link</span> | <span>Image</span> | <span>Table</span>
+                            </div>
+                            <textarea rows="8" class="w-full p-3 outline-none"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 border-t pt-4">
+                        <div class="col-span-1">
+                            <label class="input-label">Home Page Top Image</label>
+                            <label class="text-xs mr-2"><input type="radio" name="top"> YES</label>
+                            <label class="text-xs"><input type="radio" name="top" checked> NO</label>
+                        </div>
+                        <div>
+                            <label class="input-label required">Select Lead</label>
+                            <select class="custom-input p-1"><option>No Lead</option></select>
+                        </div>
+                        <div>
+                            <label class="input-label required">Head Line</label>
+                            <label class="text-xs mr-2"><input type="radio" name="hl"> YES</label>
+                            <label class="text-xs"><input type="radio" name="hl" checked> NO</label>
+                        </div>
+                        <div>
+                            <label class="input-label required">Popular Article</label>
+                            <label class="text-xs mr-2"><input type="radio" name="pop"> YES</label>
+                            <label class="text-xs"><input type="radio" name="pop" checked> NO</label>
+                        </div>
+                    </div>
+
+                    <div class="flex space-x-3 pt-4">
+                        <button type="button" class="bg-green-600 text-white px-5 py-2 rounded text-sm font-bold shadow-md hover:bg-green-700">💾 Save Data For Draft</button>
+                        <button type="submit" class="bg-sky-500 text-white px-5 py-2 rounded text-sm font-bold shadow-md hover:bg-sky-600">👁️ Save And Published</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

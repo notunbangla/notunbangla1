@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>নতুন বাংলা | বৈষম্যের বিরুদ্ধ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --nb-teal: #006a71; /* আপনার লোগোর রঙ */
+            --nb-red: #ff1f1f;  /* লোগোর লাল রঙ */
+            --border: #e5e5e5;
+            --text-main: #333;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'SolaimanLipi', Arial, sans-serif; }
+        body { background-color: #fff; color: var(--text-main); line-height: 1.6; }
+        .container { max-width: 1240px; margin: 0 auto; padding: 0 15px; }
+
+        /* --- Top Logo Section --- */
+        .header-top { display: flex; justify-content: space-between; align-items: center; padding: 15px 0; }
+        .logo img { height: 75px; }
+        .top-news-slider { display: flex; gap: 20px; }
+        .tn-item { display: flex; gap: 10px; width: 260px; border-left: 1px solid var(--border); padding-left: 12px; }
+        .tn-item img { width: 60px; height: 60px; object-fit: cover; }
+        .tn-item p { font-size: 14px; cursor: pointer; }
+        .play-icon { color: var(--nb-red); margin-right: 4px; }
+
+        /* --- Navigation --- */
+        nav { border-top: 1px solid var(--border); border-bottom: 2px solid var(--nb-teal); position: sticky; top: 0; background: #fff; z-index: 1000; }
+        .nav-wrapper { display: flex; justify-content: space-between; align-items: center; }
+        .main-menu { display: flex; list-style: none; }
+        .main-menu li a { display: block; padding: 15px 12px; text-decoration: none; color: #000; font-weight: bold; font-size: 15px; }
+        .main-menu li a:hover { color: var(--nb-teal); }
+        .nav-right { display: flex; border-left: 1px solid var(--border); }
+        .nav-btn { padding: 15px 18px; border-right: 1px solid var(--border); cursor: pointer; text-decoration: none; color: #333; }
+
+        /* --- Main Grid Layout --- */
+        .main-grid { display: grid; grid-template-columns: 280px 1fr 300px; gap: 25px; margin-top: 30px; }
+        
+        /* Column Styling */
+        .col-left, .col-mid { border-right: 1px solid var(--border); padding-right: 15px; }
+        .news-card { margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px solid var(--border); }
+        .news-card img { width: 100%; border-radius: 3px; }
+        .news-card h3 { font-size: 19px; margin-top: 10px; cursor: pointer; }
+        .news-card h3:hover { color: var(--nb-teal); }
+
+        /* Lead News */
+        .lead-news h2 { font-size: 30px; margin: 15px 0; line-height: 1.2; }
+        .live-tag { color: var(--nb-red); font-weight: bold; }
+
+        /* Ad & Sidebar */
+        .ad-space { background: #f8f8f8; border: 1px solid #ddd; height: 250px; display: flex; align-items: center; justify-content: center; color: #999; margin-bottom: 20px; }
+        .opinion-box { border-top: 2px solid var(--nb-teal); padding-top: 15px; }
+    </style>
+
+    <div class="container">
+        <header class="header-top">
+            <div class="logo">
+                <img src="imges/NotunBangla-Logo-Final.png" alt="নতুন বাংলা">
+            </div>
+            <div class="top-news-slider">
+                <div class="tn-item">
+                    <img src="imges/notunbangla isral2.jpg" alt="news">
+                    <p><i class="fa-regular fa-circle-play play-icon"></i>দেশের অর্থনীতিতে নতুন গতির সঞ্চার...</p>
+                </div>
+                <div class="tn-item">
+                    <img src="imges/notunbangla2.jpg" alt="news">
+                    <p><i class="fa-solid fa-camera play-icon"></i>রঙে-উৎসবে নববর্ষ: চারুকলা থেকে রমনা</p>
+                </div>
+				 <div class="tn-item">
+                    <img src="imges/notunbangla10.jpg" alt="news">
+                    <p><i class="fa-solid fa-camera play-icon"></i>জ্বালানি সংকট মোকাবিলা বড় চ্যালেঞ্জ</p>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <nav>
+        <div class="container nav-wrapper">
+            <ul class="main-menu">
+                 <li><a href="#">সর্বশেষ</a></li>
+                <li><a href="#">বাংলাদেশ</a></li>
+                <li><a href="#">রাজনীতি</a></li>
+                <li><a href="#">বিশ্ব</a></li>
+                <li><a href="#">খেলা</a></li>
+                <li><a href="#">মতামত</a></li>
+				<li><a href="#">বিনোদন</a></li>
+				<li><a href="#">জীবন যাপন</a></li>
+				<li><a href="#">সাহিত্য</a></li>
+				
+            </ul>
+           
+		   <div class="nav-right">
+                <div class="nav-btn"><i class="fa-solid fa-magnifying-glass">খুঁজুন</i></div>
+                <div class="nav-btn"><i class="epaper"></i>ই-পেপার</div>
+				<div class="nav-btn" style="color: var(--nb-red); font-weight: bold;">Eng</div>
+                <div class="nav-btn"><i class="fa-solid fa-user"></i> লগইন</div>
+            </div>
+        </div>
+    </nav>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Hind Siliguri', sans-serif; }
+        /* কিকার বা সাব-হেডিংয়ের জন্য হালকা ধূসর রঙ */
+        .kicker { color: #555555; }
+        /* প্রধান শিরোনামের জন্য গাঢ় কালো রঙ */
+        .headline { color: #1B1B1B; }
+    </style>
+</head>
+<body class="bg-white">
+
+    <div class="container mx-auto max-w-7xl p-4 md:p-10">
+        
+        <div class="grid grid-cols-1 md:grid-cols-[1.8fr_1fr] gap-10 items-start">
+            
+            <div class="flex-1 w-full">
+                
+                <div class="mb-5">
+                    <a href="#" class="text-[#0065C1] text-lg font-bold border-b-[3px] border-[#0065C1] pb-1 hover:text-blue-800 transition-all">
+                        রাজনীতি
+                    </a>
+                </div>
+
+                <p class="kicker text-[17px] font-medium mb-2">
+                    জামাআতে ইসলামীর সংবাদ সম্মেলন
+                </p>
+
+                <h1 class="headline text-2xl md:text-[32px] font-bold leading-[1.3] mb-4">
+                    ব্যাংক ডাকাতদের কাছেই আবার ব্যাংক ফিরিয়ে দেওয়া হচ্ছে: শিশির মনির
+                </h1>
+					<p class="text-[#4D4D4D] text-[18px] leading-[1.6] font-normal mb-6">
+        ইসলামী ব্যাংকের বর্তমান পরিস্থিতি নিয়ে আয়োজিত সংবাদ সম্মেলনে আইনজীবী শিশির মনির বলেন, যারা আগে ব্যাংক দখল করে অর্থ লোপাট করেছে, তাদের হাতেই আবার মালিকানা ফিরিয়ে দেওয়া হচ্ছে। এটি দেশের ব্যাংকিং খাতের জন্য অশনি সংকেত।
+    </p>
+
+            </div>
+
+            <div class="w-full md:w-[320px] flex flex-col items-center">
+                <span class="text-[10px] text-gray-400 uppercase tracking-widest mb-1.5 w-full">বিজ্ঞাপন</span>
+                
+                <div class="border border-gray-100 shadow-sm overflow-hidden bg-white p-1">
+                    <img src="https://via.placeholder.com/320x400?text=Crown+Cement+Top+Ad" alt="Advertisement" class="w-full h-auto object-cover">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<div class="max-w-7xl mx-auto px-4 py-4">
+    <div class="grid grid-cols-1 lg:grid-cols-[2.5fr_1fr] gap-8">
+        
+        <div class="w-full">
+            
+            <div class="flex items-baseline gap-2 mb-2">
+                <img src="" alt="Reporter">
+				  <i class="fas fa-user-edit text-gray-400 text-2xl"></i>
+				<span class="font-bold text-lg text-black">নিজস্ব প্রতিবেদক</span>
+                <span class="text-gray-400 text-sm">ঢাকা</span>
+            </div>
+			    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 py-3 border-t border-b border-gray-100 mb-6">
+                <div class="text-[#555555] text-base">
+                    আপডেট: ১৩ এপ্রিল ২০২৬, ১৯: ৪৬
+				</div>
+
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-[#1877F2] rounded-full flex items-center justify-center text-white cursor-pointer hover:opacity-90">f</div>
+                    <div class="w-8 h-8 bg-black rounded-full flex items-center justify-center text-white cursor-pointer hover:opacity-90 text-[10px]">𝕏</div>
+                    <div class="w-8 h-8 bg-[#FFEDED] rounded-full flex items-center justify-center text-[#FF0000] cursor-pointer">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z" /></svg>
+                    </div>
+                    <div class="w-8 h-8 bg-[#3B82F6] rounded-full flex items-center justify-center text-white text-[10px] font-bold cursor-pointer">অ+</div>
+                    <div class="w-8 h-8 bg-[#3B82F6] rounded-full flex items-center justify-center text-white text-[10px] font-bold cursor-pointer">অ-</div>
+                    <div class="w-8 h-8 bg-[#666666] rounded-full flex items-center justify-center text-white cursor-pointer">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" /></svg>
+                    </div>
+                </div>
+				</div>
+
+<style>
+    /* মেইন কন্টেইনার */
+    .content-layout {
+        display: flex;
+        align-items: start;
+        justify-content: center; /* মাঝখানে আনার জন্য */
+        gap: 30px;
+        position: relative;
+        width: 100%;
+    }
+
+    /* --- বাম পাশের স্টিকি (৩০০px পর) --- */
+    .left-sticky-sidebar {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 100px;
+        width: 60px;
+        flex-shrink: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.4s ease;
+        z-index: 99;
+    }
+    /* স্ক্রিপ্ট দিয়ে এই ক্লাসটি যোগ হবে */
+    .left-sticky-sidebar.show {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* সংবাদদাতার ছবি/আইকন */
+    .reporter-thumb {
+        width: 45px; height: 45px; border-radius: 50%; overflow: hidden;
+        background: #f3f4f6; display: flex; align-items: center; justify-content: center;
+        border: 1px solid #ddd; margin-bottom: 15px;
+    }
+    .reporter-thumb img { width: 100%; height: 100%; object-fit: cover; }
+
+    /* শেয়ার বাটন */
+    .s-btn {
+        width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+        color: white; cursor: pointer; font-size: 16px; margin-bottom: 12px;
+    }
+
+    /* --- মাঝখানের বডি (ডানে বামে বড় গ্যাপ) --- */
+    .article-main-body {
+        flex: 1;
+        max-width: 720px; /* বডিকে মাঝখানে রাখতে উইডথ ফিক্সড করা হয়েছে */
+        padding: 0 40px; /* দুই পাশে ফাঁকা জায়গা */
+        margin-left: 10px;
+    }
+    .text-indent {
+        padding-left: 5px; /* ৫ পিক্সেল ডান থেকে শুরু */
+    }
+
+    /* --- ডান পাশের কলাম --- */
+    .right-sidebar-column {
+        width: 320px;
+        flex-shrink: 0;
+    }
+
+    /* ডান পাশের স্টিকি পার্ট (এডের নিচের অংশ) */
+    .sticky-right-content {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 90px; /* নেভবার থেকে দূরত্ব */
+        height: fit-content;
+    }
+</style>
+
+<div class="container mx-auto mt-10">
+    <div class="content-layout">
+        
+        <aside class="left-sticky-sidebar hidden lg:block" id="leftStickyBar">
+            <div class="flex flex-col items-center">
+                <div class="reporter-thumb">
+                    <i class="fas fa-user text-gray-400"></i>
+                </div>
+                <div class="s-btn bg-[#1877F2]"><i class="fab fa-facebook-f"></i></div>
+                <div class="s-btn bg-[#000000]">𝕏</div>
+                <div class="s-btn bg-[#25D366]"><i class="fab fa-whatsapp"></i></div>
+                <div class="s-btn bg-gray-100 !text-gray-600 border"><i class="fas fa-link"></i></div>
+                <div class="s-btn bg-blue-500 text-[10px] font-bold">অ+</div>
+            </div>
+        </aside>
+
+        <main class="article-main-body">
+            <div class="text-indent">
+                <img src="https://i.ibb.co/Xxd9YjV/news-image.jpg" class="w-full rounded-sm mb-6" alt="News Image">
+                
+                <div class="text-[20px] leading-[1.8] text-[#212121] space-y-8">
+                    <p>আজ সোমবার দুপুরে রাজধানীর কাকরাইলে ইনস্টিটিউশন অব ডিপ্লোমা ইঞ্জিনিয়ার্স বাংলাদেশের (আইডিইবি) মুক্তিযোদ্ধা হল মিলনায়তনে শফিকুর রহমান এক সেমিনারে কথাগুলো বলেন।</p>
+                    
+                    <div class="my-10 bg-[#FFF200] p-8 flex justify-between items-center border border-yellow-400">
+                        <div>
+                            <h4 class="font-bold text-2xl">চা মানেই ইস্পাহানি মির্জাপুর</h4>
+                            <p class="text-sm mt-1 text-red-600 font-bold">শ্রেষ্ঠ স্বাদের অনন্য আভিজাত্য</p>
+                        </div>
+                        <img src="https://via.placeholder.com/100x80" class="h-16">
+                    </div>
+
+                    <p>শফিকুর রহমান বলেন, ব্যাংক ডাকাতদের কাছেই আবার ব্যাংক ফিরিয়ে দেয়া হচ্ছে। এটি অত্যন্ত উদ্বেগের বিষয়।</p>
+                    
+                    <div style="height: 1500px;"></div>
+                </div>
+            </div>
+        </main>
+
+        <aside class="right-sidebar-column hidden lg:block">
+            <div class="mb-6 text-center bg-gray-50 border p-2">
+                <p class="text-[10px] text-gray-400 mb-1">বিজ্ঞাপন</p>
+                <img src="https://via.placeholder.com/300x250?text=Top+Right+Ad" class="mx-auto">
+            </div>
+
+            <div class="sticky-right-content">
+                <div class="border-t-2 border-black pt-5">
+                    <h3 class="font-bold text-xl mb-6">আরও পড়ুন</h3>
+                    <div class="flex gap-3 mb-6 group cursor-pointer border-b pb-4">
+                        <h4 class="font-bold text-sm flex-1 group-hover:text-blue-700">ফেনীতে মোটরসাইকেল দুর্ঘটনায় ব্যবসায়ী নিহত</h4>
+                        <img src="https://via.placeholder.com/80x60" class="w-20 h-16 object-cover rounded shadow-sm">
+                    </div>
+                </div>
+
+                <div class="mt-6 bg-gray-50 p-4 border text-center">
+                    <p class="text-[10px] text-gray-400 mb-2 uppercase">বিজ্ঞাপন</p>
+                    <img src="https://via.placeholder.com/300x250?text=Sticky+Ad" class="w-full">
+                </div>
+            </div>
+        </aside>
+
+    </div>
+</div>
+
+<script>
+    window.addEventListener('scroll', function() {
+        var leftBar = document.getElementById("leftStickyBar");
+        // ৩০০ পিক্সেল স্ক্রল করলে বাম পাশের বার দেখাবে
+        if (window.pageYOffset > 300) {
+            leftBar.classList.add("show");
+        } else {
+            leftBar.classList.remove("show");
+        }
+    });
+</script>

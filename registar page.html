@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>রেজিস্ট্রেশন পেজ - নতুন বাংলা</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Hind Siliguri', sans-serif; }
+        
+        /* 'Register Now' এর কালো ব্যাকগ্রাউন্ড এবং সোনালী লেখা */
+        .register-header {
+            background-color: #000000;
+            color: #d4a757; /* সোনালী/হলুদ রং */
+            font-size: 24px;
+            font-weight: bold;
+            font-style: italic; /* ছবির মতো ইটালিক */
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px 5px 0 0;
+        }
+
+        /* ইনপুট ফিল্ডের নিচের অ্যারো আইকন */
+        .dropdown-icon {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%236B7280'%3%3Ppath fill-rule='evenodd' d='M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z' clip-rule='evenodd'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            background-size: 20px;
+        }
+    </style>
+</head>
+<body class="bg-white p-6 md:p-12">
+
+    <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+            
+            <div class="max-w-md mx-auto w-full">
+                <div class="register-header mb-6">Register Now</div>
+                
+                <form class="space-y-4">
+                    <div class="relative">
+                        <input type="text" placeholder="নাম" class="w-full border border-gray-300 p-3 pl-4 pr-10 rounded bg-white text-gray-800 focus:outline-none focus:ring-1 focus:ring-blue-400 dropdown-icon">
+                    </div>
+                    
+                    <div class="relative">
+                        <input type="text" placeholder="পদবি" class="w-full border border-gray-300 p-3 pl-4 pr-10 rounded bg-white text-gray-800 focus:outline-none focus:ring-1 focus:ring-blue-400 dropdown-icon">
+                    </div>
+                    
+                    <div class="relative">
+                        <input type="password" placeholder="Pass:" class="w-full border border-gray-300 p-3 pl-4 pr-10 rounded bg-white text-gray-800 font-serif focus:outline-none focus:ring-1 focus:ring-blue-400 dropdown-icon">
+                    </div>
+                    
+                    <div class="relative">
+                        <input type="text" placeholder="Picture" class="w-full border border-gray-300 p-3 pl-4 pr-10 rounded bg-white text-gray-800 font-serif focus:outline-none focus:ring-1 focus:ring-blue-400 dropdown-icon">
+                    </div>
+                    
+                    <div class="flex justify-center pt-2">
+                        <button type="submit" class="bg-blue-500 text-white px-8 py-3 rounded text-xl font-bold font-serif hover:bg-blue-600 transition duration-300 shadow-md">
+                            Register
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="bg-gray-100 rounded-lg shadow-inner overflow-hidden border border-gray-200">
+                <div class="flex items-center p-6 space-x-4">
+                    <div class="text-left flex-1">
+                        <h3 class="text-blue-900 text-3xl font-bold leading-tight">আভিজাত্য</h3>
+                        <p class="text-blue-900 text-2xl font-semibold">আর পানির ফ্লো</p>
+                        <p class="text-blue-900 text-xl font-medium mt-1">দুটোই ঠিকঠাক</p>
+                    </div>
+                    <div class="flex-shrink-0 text-center">
+                        <div class="bg-red-600 rounded-full w-24 h-24 flex items-center justify-center border-4 border-red-700 shadow-lg mb-2 mx-auto">
+                            <span class="text-white text-4xl font-black">RFL</span>
+                        </div>
+                        <p class="text-red-700 text-sm font-bold uppercase tracking-wider">Bathroom Fittings</p>
+                        <p class="text-red-700 text-xs italic">Feel the Difference...</p>
+                    </div>
+                </div>
+                <div class="relative p-6">
+                    <img src="https://via.placeholder.com/400x150?text=Water+Tap+Image" alt="Water Tap" class="w-full h-auto">
+                </div>
+                <div class="h-3 bg-red-600 w-full"></div> </div>
+        </div>
+
+        <div class="mt-20 flex justify-center">
+            <div class="bg-pink-600 text-white px-8 py-5 rounded-lg shadow-lg flex items-center space-x-6 border border-pink-700">
+                <div class="flex items-center space-x-3">
+                    <div class="bg-white p-2 rounded shadow">
+                        <span class="text-pink-600 font-extrabold text-2xl uppercase tracking-tighter">সংবাদ</span>
+                    </div>
+                    <h3 class="text-3xl font-bold leading-tight">নতুন বাংলায় স্বাগত। ভিজিট করতে</h3>
+                </div>
+                <button class="bg-white text-pink-700 font-black px-6 py-2 rounded-full shadow-md text-lg hover:bg-gray-100 transition">
+                    ক্লিক করুন 👈
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
